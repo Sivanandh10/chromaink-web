@@ -1165,153 +1165,151 @@ h1, h2, h3, h4, h5, h6 {
   gap: 28px;
 }
 
-/* ── Developer Mode Card ── */
-.dev-card {
-  background: #0b0c10;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  overflow: hidden;
-  font-family: 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+/* ── Trending Premium Blog Card ── */
+.blog-card {
+  background: rgba(255, 255, 255, 0.015);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  padding: 32px;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
 }
 
-.dev-card:hover {
-  border-color: rgba(124, 58, 237, 0.3);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45), 0 0 20px rgba(124, 58, 237, 0.08);
-  transform: translateY(-4px);
+.blog-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(124, 58, 237, 0.25);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), 0 0 25px rgba(124, 58, 237, 0.08);
 }
 
-/* Terminal Title Bar */
-.dev-card-header {
-  background: #111218;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  padding: 10px 16px;
+/* Header */
+.blog-card-header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  font-size: 0.72rem;
-  color: var(--text-muted);
-  user-select: none;
-}
-
-.dev-dots {
-  display: flex;
-  gap: 6px;
-}
-
-.dev-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.dev-red { background: #ff5f56; }
-.dev-yellow { background: #ffbd2e; }
-.dev-green { background: #27c93f; }
-
-.dev-path {
-  font-size: 0.7rem;
-  opacity: 0.8;
-  font-family: inherit;
-}
-
-.dev-lang {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 1px 5px;
-  border-radius: 3px;
-  font-weight: 600;
-  font-size: 0.62rem;
-}
-
-/* Card body layout */
-.dev-card-body {
-  display: grid;
-  grid-template-columns: 40px 1fr;
-  padding: 20px 0;
-  flex: 1;
-}
-
-/* Line numbers gutter */
-.dev-lines {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 8px;
-  color: rgba(255, 255, 255, 0.12);
-  font-size: 0.75rem;
-  border-right: 1px solid rgba(255, 255, 255, 0.05);
-  user-select: none;
-  padding-top: 2px;
 }
 
-/* Code area */
-.dev-code {
-  padding: 0 18px 0 20px;
+.blog-card-tag {
+  font-family: var(--font-accent);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 100px;
+}
+
+.tag-violet {
+  background: rgba(124, 58, 237, 0.12);
+  border: 1px solid rgba(124, 58, 237, 0.25);
+  color: #c084fc;
+}
+
+.tag-blue {
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  color: #60a5fa;
+}
+
+.tag-pink {
+  background: rgba(236, 72, 153, 0.12);
+  border: 1px solid rgba(236, 72, 153, 0.25);
+  color: #f472b6;
+}
+
+.blog-card-read {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+/* Body */
+.blog-card-body {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-/* Category Variable */
-.dev-tag {
-  font-size: 0.72rem;
-  font-family: inherit;
-  letter-spacing: 0;
-  padding: 0;
-  background: transparent !important;
-  border: none !important;
-  text-transform: none;
-}
-
-.syntax-keyword { color: #f472b6; }
-.syntax-var { color: #c084fc; }
-.syntax-val { color: #34d399; }
-.syntax-comment { color: #64748b; }
-
-.dev-card:hover .syntax-val {
-  color: #a78bfa; /* subtle hover react */
-}
-
-/* Heading inside code */
-.dev-card .blog-title {
-  font-family: var(--font-body); /* main sans font for high legibility */
-  font-size: 1.25rem;
+.blog-card-title {
+  font-family: var(--font-title);
+  font-size: 1.35rem;
   font-weight: 600;
-  color: #fff;
   line-height: 1.35;
-  margin: 2px 0;
-  letter-spacing: -0.2px;
-  transition: color 0.25s ease;
+  color: #fff;
+  transition: color 0.3s;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-.dev-card:hover .blog-title {
+.blog-card:hover .blog-card-title {
   color: #c084fc;
 }
 
-/* Excerpt as code comments */
-.dev-card .blog-excerpt {
-  font-family: inherit;
-  font-size: 0.8rem;
-  color: #64748b;
+.blog-card-excerpt {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
   line-height: 1.6;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0;
-  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-/* Meta date/time comments */
-.dev-card .blog-meta {
+/* Footer */
+.blog-card-footer {
   display: flex;
-  gap: 14px;
+  justify-content: space-between;
+  align-items: center;
   margin-top: auto;
-  font-size: 0.72rem;
-  color: #64748b;
-  font-family: inherit;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.blog-card-date {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.blog-card-date i {
+  width: 13px;
+  height: 13px;
+}
+
+.blog-card-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  transition: color 0.3s, gap 0.3s;
+}
+
+.blog-card-link i {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.3s;
+}
+
+.blog-card:hover .blog-card-link {
+  color: var(--accent-color);
+  gap: 10px;
+}
+
+.blog-card:hover .blog-card-link i {
+  transform: translate(2px, -2px);
 }
 
 /* Responsive grid overrides */
@@ -1327,30 +1325,12 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  .dev-card {
+  
+  .blog-card {
     max-width: 480px;
     margin: 0 auto;
     width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .dev-card-body {
-    grid-template-columns: 32px 1fr;
-  }
-  .dev-code {
-    padding: 0 12px 0 14px;
-  }
-  .dev-card .blog-title {
-    font-size: 1.15rem;
-  }
-  .dev-card .blog-excerpt {
-    font-size: 0.78rem;
-  }
-}
-
-  .blog-item-num {
-    font-size: 1.6rem;
+    padding: 24px;
   }
 }
 
