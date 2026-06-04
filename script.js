@@ -40,6 +40,16 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
+    // Close menu when close icon inside nav menu is clicked
+    const navCloseBtn = document.getElementById('navCloseBtn');
+    if (navCloseBtn) {
+      navCloseBtn.addEventListener('click', () => {
+        navMenu.classList.remove('open');
+        menuToggle.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      });
+    }
+
     // Close menu when clicking outside of the menu overlay
     document.addEventListener('click', (e) => {
       if (navMenu.classList.contains('open')) {
@@ -123,6 +133,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let tooltipTimeout = setTimeout(() => {
     if (whatsappTooltip) {
       whatsappTooltip.classList.add('show');
+      const scrollTopBtn = document.getElementById('scrollTopBtn');
+      if (scrollTopBtn) scrollTopBtn.classList.add('wa-open');
     }
   }, 3500);
 
@@ -132,6 +144,8 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       e.stopPropagation();
       whatsappTooltip.classList.remove('show');
+      const scrollTopBtn = document.getElementById('scrollTopBtn');
+      if (scrollTopBtn) scrollTopBtn.classList.remove('wa-open');
       clearTimeout(tooltipTimeout);
     });
   }
@@ -140,6 +154,8 @@ document.addEventListener('DOMContentLoaded', () => {
   if (whatsappBtn && whatsappTooltip) {
     whatsappBtn.addEventListener('click', () => {
       whatsappTooltip.classList.remove('show');
+      const scrollTopBtn = document.getElementById('scrollTopBtn');
+      if (scrollTopBtn) scrollTopBtn.classList.remove('wa-open');
       clearTimeout(tooltipTimeout);
     });
   }
@@ -150,6 +166,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (window.scrollY > 400 && !scrollThresholdTriggered) {
       if (whatsappTooltip) {
         whatsappTooltip.classList.remove('show');
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        if (scrollTopBtn) scrollTopBtn.classList.remove('wa-open');
       }
       scrollThresholdTriggered = true;
     }
