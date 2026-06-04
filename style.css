@@ -2151,12 +2151,20 @@ h1, h2, h3, h4, h5, h6 {
     transform: translate(0, 0);
   }
   
-  .nav-menu.open li:nth-child(1) { transition-delay: 0.10s; }
-  .nav-menu.open li:nth-child(2) { transition-delay: 0.15s; }
-  .nav-menu.open li:nth-child(3) { transition-delay: 0.20s; }
-  .nav-menu.open li:nth-child(4) { transition-delay: 0.25s; }
-  .nav-menu.open li:nth-child(5) { transition-delay: 0.30s; }
-  .nav-menu.open li:nth-child(6) { transition-delay: 0.35s; }
+  /* Curving margins to align along the quarter-circle shape */
+  .nav-menu li:nth-child(1) { margin-right: 15px; }
+  .nav-menu li:nth-child(2) { margin-right: 32px; }
+  .nav-menu li:nth-child(3) { margin-right: 54px; }
+  .nav-menu li:nth-child(4) { margin-right: 80px; }
+  .nav-menu li:nth-child(5) { margin-right: 112px; }
+  .nav-menu li:nth-child(6) { margin-right: 150px; }
+  
+  .nav-menu.open li:nth-child(1) { transition-delay: 0.08s; }
+  .nav-menu.open li:nth-child(2) { transition-delay: 0.12s; }
+  .nav-menu.open li:nth-child(3) { transition-delay: 0.16s; }
+  .nav-menu.open li:nth-child(4) { transition-delay: 0.20s; }
+  .nav-menu.open li:nth-child(5) { transition-delay: 0.24s; }
+  .nav-menu.open li:nth-child(6) { transition-delay: 0.28s; }
   
   .nav-link {
     font-family: var(--font-accent);
