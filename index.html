@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ChromaInk - Handcrafted premium fountain pen and calligraphy inks. Experience unparalleled fluid dynamics, deep pigments, and feather-resistant luxury.">
+  <title>ChromaInk | The Soul of Fluid Expression</title>
+  
+  <!-- Premium Fonts Pairing -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- FontAwesome for brand icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Sticky WhatsApp Widget -->
+  <div class="whatsapp-sticky" id="whatsappWidget">
+    <div class="whatsapp-tooltip" id="whatsappTooltip">
+      <div class="tooltip-header">
+        <span class="dot online"></span>
+        <strong>ChromaInk Support</strong>
+      </div>
+      <p>Need help finding your perfect ink shade? Chat with us! ✒️</p>
+      <button class="tooltip-close" id="closeTooltipBtn" aria-label="Close tooltip">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+    <a href="https://wa.me/1234567890?text=Hi%20there!%20I'm%20interested%20in%20learning%20more%20about%20your%20premium%20inks." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="whatsapp-btn" 
+       id="whatsappBtn" 
+       aria-label="Chat on WhatsApp">
+      <i data-lucide="message-circle" class="whatsapp-icon"></i>
+      <span class="pulse-ring"></span>
+    </a>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="main-header" id="mainHeader">
+    <div class="header-container">
+      <a href="#home" class="logo">
+        <span class="logo-text">CHROMA</span><span class="logo-accent">INK</span>
+      </a>
+      
+      <nav class="nav-menu" id="navMenu">
+        <ul>
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#products" class="nav-link">Products</a></li>
+          <li><a href="#blog" class="nav-link">Blog</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-actions">
+        <a href="#products" class="btn btn-nav">Explore Palette</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <!-- Looping Background Video -->
+    <div class="hero-video-container">
+      <video class="hero-video-bg" autoplay loop muted playsinline>
+        <source src="hero-bg.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+    
+    <div class="hero-content-container">
+      <!-- Right Side Glassmorphic Card -->
+      <div class="hero-glass-card fade-in-up">
+        <div class="card-accent-label">
+          <i data-lucide="droplet" class="label-icon"></i>
+          <span>INDUSTRIAL QUALITY</span>
+        </div>
+        <h1 class="hero-tagline">
+          Premium Inks for <span class="text-gradient">Banners</span> & <span class="text-gradient">PVC Pipes</span>.
+        </h1>
+        <p class="hero-description">
+          Formulated for high-adhesion flex printing, vinyl banners, and PVC pipe industrial coding. Instant drying and weatherproof.
+        </p>
+        <div class="hero-actions-group">
+          <a href="#products" class="btn btn-primary">
+            <span>Explore Inks</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+          <a href="#about" class="btn btn-secondary">
+            <span>Our Chemistry</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section scroll-reveal">
+    <div class="section-container">
+      <div class="about-grid">
+        <div class="about-text-content">
+          <div class="section-subtitle">ABOUT US</div>
+          <h2 class="section-title">Industrial Ink Performance</h2>
+          <p class="lead-text">
+            High-performance formulas engineered specifically for PVC pipe coding and flex banner printing.
+          </p>
+          <p class="body-text">
+            Our quick-drying solvent inks deliver smudge-proof, weather-resistant adhesion on plastics, vinyl, and metals.
+          </p>
+        </div>
+        
+        <div class="about-visuals">
+          <div class="visual-card glassmorphic-border">
+            <!-- Looping Video in About Section (15s minimum) -->
+            <div class="about-video-wrapper">
+              <video class="about-video" autoplay loop muted playsinline>
+                <source src="hero-bg.webm" type="video/webm">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            
+            <!-- Stats Row placed directly below the video as requested -->
+            <div class="about-stats-row">
+              <div class="about-stat-box glassmorphic-card">
+                <span class="stat-number count-up" data-target="2000">+0</span>
+                <span class="stat-label">Active Customers</span>
+              </div>
+              <div class="about-stat-box glassmorphic-card">
+                <span class="stat-number">FAST</span>
+                <span class="stat-label">All India Delivery</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rolling Quote Leftside Loop -->
+      <div class="marquee-container">
+        <div class="marquee-content">
+          <div class="marquee-item theme-sapphire"><span>&ldquo;</span>Unrivaled Adhesion on PVC Pipes<span>&rdquo;</span></div>
+          <div class="marquee-item theme-crimson"><span>&ldquo;</span>High-Intensity Pigments for Flex Banners<span>&rdquo;</span></div>
+          <div class="marquee-item theme-emerald"><span>&ldquo;</span>100% Smudge-Proof, Ultra-Fast Drying<span>&rdquo;</span></div>
+          <div class="marquee-item theme-obsidian"><span>&ldquo;</span>Formulated for Industrial Printheads<span>&rdquo;</span></div>
+          <!-- Duplicated for infinite continuous loop -->
+          <div class="marquee-item theme-sapphire"><span>&ldquo;</span>Unrivaled Adhesion on PVC Pipes<span>&rdquo;</span></div>
+          <div class="marquee-item theme-crimson"><span>&ldquo;</span>High-Intensity Pigments for Flex Banners<span>&rdquo;</span></div>
+          <div class="marquee-item theme-emerald"><span>&ldquo;</span>100% Smudge-Proof, Ultra-Fast Drying<span>&rdquo;</span></div>
+          <div class="marquee-item theme-obsidian"><span>&ldquo;</span>Formulated for Industrial Printheads<span>&rdquo;</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products-section scroll-reveal">
+    <div class="section-container">
+      <div class="section-header-center">
+        <div class="section-subtitle">INDUSTRIAL INKS</div>
+        <h2 class="section-title">The Performance Catalog</h2>
+        <p class="section-desc">
+          Formulated for flex banner printing, industrial printheads, and PVC pipe batch coding under high line-speeds.
+        </p>
+      </div>
+
+      <div class="product-split-layout">
+        <!-- Slider wrapper (Mobile carousel) -->
+        <div class="product-slider-wrapper">
+          <!-- Slider Navigation Arrows (mobile only) -->
+          <button class="slider-arrow prev-arrow" id="prevProductBtn" aria-label="Previous product">
+            <i data-lucide="chevron-left"></i>
+          </button>
+          
+          <!-- Left Column: Product Cards List -->
+          <div class="product-list-column" id="productListColumn">
+            <!-- Product Card 1 -->
+            <div class="product-list-card glassmorphic-card" data-product-id="1">
+              <div class="card-left">
+                <span class="product-tag font-accent">SOLVENT BASED</span>
+                <h3 class="product-name">ChromaBanner Jet</h3>
+                <div class="product-desc-container">
+                  <p class="product-short-desc">Premium blue solvent ink for large-format flex banner printers. Vivid density and high weather stability.</p>
+                  <div class="product-more-desc">
+                    Our advanced solvent formula penetrates deep into vinyl and flex substrates, ensuring the print remains waterproof, UV-resistant, and vibrant under direct sunlight for up to 5 years.
+                  </div>
+                </div>
+                <div class="card-actions">
+                  <button class="read-more-btn" aria-label="Toggle description">
+                    <i data-lucide="chevron-down" class="arrow-icon"></i>
+                  </button>
+                  <a href="https://wa.me/1234567890?text=Hi!%20I'd%20like%20to%20order%20ChromaBanner%20Jet" target="_blank" class="btn btn-outline enquiry-btn">
+                    <span>Enquiry Now</span>
+                  </a>
+                </div>
+              </div>
+              <div class="card-right">
+                <div class="product-img-wrapper">
+                  <img src="assets/product-sapphire.png" alt="ChromaBanner Jet" class="product-img">
+                  <div class="star-badge"><i data-lucide="star"></i></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-list-card glassmorphic-card" data-product-id="2">
+              <div class="card-left">
+                <span class="product-tag font-accent">PVC CODING</span>
+                <h3 class="product-name">ChromaPipe Crimson</h3>
+                <div class="product-desc-container">
+                  <p class="product-short-desc">Bright crimson coding ink. Fast adhesion on plastics, PVC pipes, conduits, and cables.</p>
+                  <div class="product-more-desc">
+                    Specifically blended for continuous inkjet (CIJ) systems. It cures instantly upon printing to prevent smudging or fading on high-speed industrial extrusion lines.
+                  </div>
+                </div>
+                <div class="card-actions">
+                  <button class="read-more-btn" aria-label="Toggle description">
+                    <i data-lucide="chevron-down" class="arrow-icon"></i>
+                  </button>
+                  <a href="https://wa.me/1234567890?text=Hi!%20I'd%20like%20to%20order%20ChromaPipe%20Crimson" target="_blank" class="btn btn-outline enquiry-btn">
+                    <span>Enquiry Now</span>
+                  </a>
+                </div>
+              </div>
+              <div class="card-right">
+                <div class="product-img-wrapper">
+                  <img src="assets/product-crimson.png" alt="ChromaPipe Crimson" class="product-img">
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-list-card glassmorphic-card" data-product-id="3">
+              <div class="card-left">
+                <span class="product-tag font-accent">SUBLIMATION</span>
+                <h3 class="product-name">FlexiPrint Emerald</h3>
+                <div class="product-desc-container">
+                  <p class="product-short-desc">High-speed green printing ink. Specialized formulation for flexible vinyl banners and canvas.</p>
+                  <div class="product-more-desc">
+                    Offers superior color gamut and printhead lubrication to prevent clogging. Ideal for automated large-scale outdoor advertising production.
+                  </div>
+                </div>
+                <div class="card-actions">
+                  <button class="read-more-btn" aria-label="Toggle description">
+                    <i data-lucide="chevron-down" class="arrow-icon"></i>
+                  </button>
+                  <a href="https://wa.me/1234567890?text=Hi!%20I'd%20like%20to%20order%20FlexiPrint%20Emerald" target="_blank" class="btn btn-outline enquiry-btn">
+                    <span>Enquiry Now</span>
+                  </a>
+                </div>
+              </div>
+              <div class="card-right">
+                <div class="product-img-wrapper">
+                  <img src="assets/product-emerald.png" alt="FlexiPrint Emerald" class="product-img">
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="product-list-card glassmorphic-card" data-product-id="4">
+              <div class="card-left">
+                <span class="product-tag font-accent">INDUSTRIAL BLACK</span>
+                <h3 class="product-name">Obsidian Mark-10</h3>
+                <div class="product-desc-container">
+                  <p class="product-short-desc">Jet black coding and batch ink. Instant dry time on plastics, PVC, glass, and steel.</p>
+                  <div class="product-more-desc">
+                    An industrial standard black coding fluid engineered with solvents that cross-link with substrates for chemical and abrasion resistance.
+                  </div>
+                </div>
+                <div class="card-actions">
+                  <button class="read-more-btn" aria-label="Toggle description">
+                    <i data-lucide="chevron-down" class="arrow-icon"></i>
+                  </button>
+                  <a href="https://wa.me/1234567890?text=Hi!%20I'd%20like%20to%20order%20Obsidian%20Mark-10" target="_blank" class="btn btn-outline enquiry-btn">
+                    <span>Enquiry Now</span>
+                  </a>
+                </div>
+              </div>
+              <div class="card-right">
+                <div class="product-img-wrapper">
+                  <img src="assets/product-obsidian.png" alt="Obsidian Mark-10" class="product-img">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <button class="slider-arrow next-arrow" id="nextProductBtn" aria-label="Next product">
+            <i data-lucide="chevron-right"></i>
+          </button>
+          
+          <!-- Slider Dots (mobile only) -->
+          <div class="slider-dots" id="sliderDots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+          </div>
+        </div>
+
+        <!-- Right Column: Sticky Featured Showcase Card -->
+        <div class="product-featured-column">
+          <div class="product-featured-card glassmorphic-card" id="featuredProductCard">
+            <div class="featured-img-wrapper">
+              <img src="assets/product-sapphire.png" id="featuredImg" alt="Featured Product" class="featured-img">
+              <div class="star-badge"><i data-lucide="star"></i></div>
+            </div>
+            <div class="featured-info">
+              <div class="featured-badge" id="featuredBadge">★ BEST SELLER - SOLVENT BASED</div>
+              <h3 class="featured-name" id="featuredName">ChromaBanner Jet</h3>
+              <p class="featured-desc" id="featuredDesc">
+                Premium blue solvent ink for large-format flex banner printers. Vivid density and high weather stability. Our advanced solvent formula penetrates deep into vinyl and flex substrates, ensuring the print remains waterproof, UV-resistant, and vibrant under direct sunlight.
+              </p>
+              <div class="featured-action">
+                <a href="https://wa.me/1234567890?text=Hi!%20I'd%20like%20to%20order%20ChromaBanner%20Jet" id="featuredEnquiryBtn" target="_blank" class="btn btn-primary btn-full">
+                  <i data-lucide="shopping-cart"></i>
+                  <span>Enquiry Now</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="blog-section scroll-reveal">
+    <div class="section-container">
+      <div class="section-header-center">
+        <div class="section-subtitle">INSIGHTS &amp; KNOWLEDGE</div>
+        <h2 class="section-title">From the <span class="text-gradient">Lab</span></h2>
+        <p class="section-desc">
+          Expert articles on ink chemistry, print quality, and industrial coding — content will be provided.
+        </p>
+      </div>
+
+      <div class="blog-list">
+
+        <!-- Blog Item 1 -->
+        <article class="blog-item">
+          <div class="blog-item-num">01</div>
+          <div class="blog-item-content">
+            <span class="blog-category-tag">
+              <i data-lucide="layers"></i>INK CHEMISTRY
+            </span>
+            <h3 class="blog-title">How Solvent-Based Inks Bond to Flex Banner Substrates</h3>
+            <p class="blog-excerpt">
+              A deep-dive into the molecular adhesion mechanics that make our banner inks waterproof and UV-resistant for years.
+            </p>
+            <div class="blog-meta">
+              <span class="blog-date"><i data-lucide="calendar"></i> Coming Soon</span>
+              <span class="blog-read-time"><i data-lucide="clock"></i> 5 min read</span>
+            </div>
+          </div>
+          <div class="blog-item-action">
+            <a href="#blog" class="blog-read-more">
+              <span>Read Article</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Blog Item 2 -->
+        <article class="blog-item">
+          <div class="blog-item-num">02</div>
+          <div class="blog-item-content">
+            <span class="blog-category-tag">
+              <i data-lucide="zap"></i>INDUSTRIAL CODING
+            </span>
+            <h3 class="blog-title">PVC Pipe Coding: CIJ vs. TIJ Ink Formulations Compared</h3>
+            <p class="blog-excerpt">
+              Which ink system performs best on high-speed PVC extrusion lines? We test adhesion, drying time, and durability across conditions.
+            </p>
+            <div class="blog-meta">
+              <span class="blog-date"><i data-lucide="calendar"></i> Coming Soon</span>
+              <span class="blog-read-time"><i data-lucide="clock"></i> 7 min read</span>
+            </div>
+          </div>
+          <div class="blog-item-action">
+            <a href="#blog" class="blog-read-more">
+              <span>Read Article</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Blog Item 3 -->
+        <article class="blog-item">
+          <div class="blog-item-num">03</div>
+          <div class="blog-item-content">
+            <span class="blog-category-tag">
+              <i data-lucide="sun"></i>UV RESISTANCE
+            </span>
+            <h3 class="blog-title">Why Outdoor Banner Inks Must Survive Indian Summer Heat</h3>
+            <p class="blog-excerpt">
+              Extreme UV exposure and humidity cycles degrade most inks within months. Here's how ChromaInk formulations outperform the market.
+            </p>
+            <div class="blog-meta">
+              <span class="blog-date"><i data-lucide="calendar"></i> Coming Soon</span>
+              <span class="blog-read-time"><i data-lucide="clock"></i> 4 min read</span>
+            </div>
+          </div>
+          <div class="blog-item-action">
+            <a href="#blog" class="blog-read-more">
+              <span>Read Article</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Reviews Section -->
+  <section id="reviews" class="reviews-section">
+    <div class="section-container">
+      <div class="section-header-center">
+        <div class="section-subtitle">CLIENT TESTIMONIALS</div>
+        <h2 class="section-title">Trusted by <span class="text-gradient">Industry Leaders</span></h2>
+        <p class="section-desc">Real feedback from printers, manufacturers, and businesses across India.</p>
+      </div>
+    </div>
+
+    <!-- Row 1: Scrolls RIGHT -->
+    <div class="reviews-track-wrapper">
+      <div class="reviews-fade-left"></div>
+      <div class="reviews-track reviews-track--right">
+
+        <!-- ORIGINAL SET -->
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"ChromaBanner Jet transformed our outdoor printing business. The colours stay vivid even after months in direct sunlight. Absolutely premium quality."</p>
+          <div class="review-author">
+            <div class="review-avatar">RK</div>
+            <div>
+              <div class="review-name">Rajesh Kumar</div>
+              <div class="review-company">FlexPrint Industries, Chennai</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card review-card--accent">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"The ChromaPipe Crimson ink adheres perfectly to our PVC pipe extrusion line. Zero smudging, instant dry — production efficiency went up by 30%."</p>
+          <div class="review-author">
+            <div class="review-avatar">AM</div>
+            <div>
+              <div class="review-name">Arjun Mehta</div>
+              <div class="review-company">PipeTech Pvt. Ltd, Ahmedabad</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"We switched from a competitor and the difference is night and day. ChromaInk products are consistent batch after batch. Highly recommended."</p>
+          <div class="review-author">
+            <div class="review-avatar">SP</div>
+            <div>
+              <div class="review-name">Sunita Patel</div>
+              <div class="review-company">Sunrise Banners, Mumbai</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★☆</div>
+          <p class="review-text">"Excellent UV resistance on flex substrates. Our banners installed two years ago still look brand new. The formulation is genuinely superior."</p>
+          <div class="review-author">
+            <div class="review-avatar">VR</div>
+            <div>
+              <div class="review-name">Vijay Rao</div>
+              <div class="review-company">AdVision Graphics, Hyderabad</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card review-card--accent">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Fast delivery and the technical support team is extremely knowledgeable. They helped us dial in the perfect formulation for our Mimaki printer."</p>
+          <div class="review-author">
+            <div class="review-avatar">DK</div>
+            <div>
+              <div class="review-name">Dinesh Kumar</div>
+              <div class="review-company">PrintPro Solutions, Bangalore</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DUPLICATE SET for seamless loop -->
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"ChromaBanner Jet transformed our outdoor printing business. The colours stay vivid even after months in direct sunlight. Absolutely premium quality."</p>
+          <div class="review-author">
+            <div class="review-avatar">RK</div>
+            <div>
+              <div class="review-name">Rajesh Kumar</div>
+              <div class="review-company">FlexPrint Industries, Chennai</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card review-card--accent">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"The ChromaPipe Crimson ink adheres perfectly to our PVC pipe extrusion line. Zero smudging, instant dry — production efficiency went up by 30%."</p>
+          <div class="review-author">
+            <div class="review-avatar">AM</div>
+            <div>
+              <div class="review-name">Arjun Mehta</div>
+              <div class="review-company">PipeTech Pvt. Ltd, Ahmedabad</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"We switched from a competitor and the difference is night and day. ChromaInk products are consistent batch after batch. Highly recommended."</p>
+          <div class="review-author">
+            <div class="review-avatar">SP</div>
+            <div>
+              <div class="review-name">Sunita Patel</div>
+              <div class="review-company">Sunrise Banners, Mumbai</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★☆</div>
+          <p class="review-text">"Excellent UV resistance on flex substrates. Our banners installed two years ago still look brand new. The formulation is genuinely superior."</p>
+          <div class="review-author">
+            <div class="review-avatar">VR</div>
+            <div>
+              <div class="review-name">Vijay Rao</div>
+              <div class="review-company">AdVision Graphics, Hyderabad</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card review-card--accent">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Fast delivery and the technical support team is extremely knowledgeable. They helped us dial in the perfect formulation for our Mimaki printer."</p>
+          <div class="review-author">
+            <div class="review-avatar">DK</div>
+            <div>
+              <div class="review-name">Dinesh Kumar</div>
+              <div class="review-company">PrintPro Solutions, Bangalore</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="reviews-fade-right"></div>
+    </div>
+
+    <!-- Row 2: Scrolls LEFT -->
+    <div class="reviews-track-wrapper">
+      <div class="reviews-fade-left"></div>
+      <div class="reviews-track reviews-track--left">
+
+        <!-- ORIGINAL SET -->
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Obsidian Mark-10 is the best black coding ink we've ever used. Legibility on glass and steel is perfect even at 600 dpi speeds on our CIJ line."</p>
+          <div class="review-author">
+            <div class="review-avatar">MN</div>
+            <div>
+              <div class="review-name">Manoj Nair</div>
+              <div class="review-company">Bottling Corp India, Pune</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card review-card--accent">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"FlexiPrint Emerald gives us a wider colour gamut than anything else on the market. Our canvas prints now win awards. Worth every rupee."</p>
+          <div class="review-author">
+            <div class="review-avatar">LS</div>
+            <div>
+              <div class="review-name">Lakshmi Subramanian</div>
+              <div class="review-company">Canvas World, Coimbatore</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"ChromaInk's technical team guided us through the entire printhead compatibility process. The after-sales support is world class. Truly a partner, not just a vendor."</p>
+          <div class="review-author">
+            <div class="review-avatar">PG</div>
+            <div>
+              <div class="review-name">Prakash Gupta</div>
+              <div class="review-company">MegaFlex Prints, Delhi</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★☆</div>
+          <p class="review-text">"The PVC coding ink doesn't fade even in outdoor environments. We've been using ChromaInk for two years and never had a quality complaint from any client."</p>
+          <div class="review-author">
+            <div class="review-avatar">BT</div>
+            <div>
+              <div class="review-name">Babu Thomas</div>
+              <div class="review-company">PipeMax Ltd, Kochi</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card review-card--accent">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Competitive pricing, genuine quality, and always on-time delivery. ChromaInk has become our exclusive ink supplier for all 12 of our flex printing machines."</p>
+          <div class="review-author">
+            <div class="review-avatar">HR</div>
+            <div>
+              <div class="review-name">Harish Reddy</div>
+              <div class="review-company">StarSign Advertising, Hyderabad</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DUPLICATE SET for seamless loop -->
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Obsidian Mark-10 is the best black coding ink we've ever used. Legibility on glass and steel is perfect even at 600 dpi speeds on our CIJ line."</p>
+          <div class="review-author">
+            <div class="review-avatar">MN</div>
+            <div>
+              <div class="review-name">Manoj Nair</div>
+              <div class="review-company">Bottling Corp India, Pune</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card review-card--accent">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"FlexiPrint Emerald gives us a wider colour gamut than anything else on the market. Our canvas prints now win awards. Worth every rupee."</p>
+          <div class="review-author">
+            <div class="review-avatar">LS</div>
+            <div>
+              <div class="review-name">Lakshmi Subramanian</div>
+              <div class="review-company">Canvas World, Coimbatore</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"ChromaInk's technical team guided us through the entire printhead compatibility process. The after-sales support is world class. Truly a partner, not just a vendor."</p>
+          <div class="review-author">
+            <div class="review-avatar">PG</div>
+            <div>
+              <div class="review-name">Prakash Gupta</div>
+              <div class="review-company">MegaFlex Prints, Delhi</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★☆</div>
+          <p class="review-text">"The PVC coding ink doesn't fade even in outdoor environments. We've been using ChromaInk for two years and never had a quality complaint from any client."</p>
+          <div class="review-author">
+            <div class="review-avatar">BT</div>
+            <div>
+              <div class="review-name">Babu Thomas</div>
+              <div class="review-company">PipeMax Ltd, Kochi</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card review-card--accent">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Competitive pricing, genuine quality, and always on-time delivery. ChromaInk has become our exclusive ink supplier for all 12 of our flex printing machines."</p>
+          <div class="review-author">
+            <div class="review-avatar">HR</div>
+            <div>
+              <div class="review-name">Harish Reddy</div>
+              <div class="review-company">StarSign Advertising, Hyderabad</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="reviews-fade-right"></div>
+    </div>
+
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section scroll-reveal">
+    <!-- Section header banner -->
+    <div class="contact-header-banner">
+      <div class="section-subtitle">CONTACT US</div>
+      <p class="contact-header-sub">We are here to help you.</p>
+    </div>
+
+    <div class="section-container">
+      <div class="contact-grid">
+
+        <!-- Left: CTA / Branding -->
+        <div class="contact-info-panel">
+          <p class="contact-cta-label">Enquire Now</p>
+          <p class="contact-cta-label">To Reach Us</p>
+          <h2 class="contact-cta-big">SOON<span class="contact-cta-accent">!!!</span></h2>
+
+          <div class="contact-methods">
+            <div class="method-item">
+              <i data-lucide="phone"></i>
+              <div>
+                <h4>Call / WhatsApp</h4>
+                <p>+91 XXXXX XXXXX</p>
+              </div>
+            </div>
+            <div class="method-item">
+              <i data-lucide="mail"></i>
+              <div>
+                <h4>Email</h4>
+                <p>info@chromaink.in</p>
+              </div>
+            </div>
+            <div class="method-item">
+              <i data-lucide="map-pin"></i>
+              <div>
+                <h4>Address</h4>
+                <p>ChromaInk Pvt. Ltd, Industrial Area, Tamil Nadu, India</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Enquiry Form -->
+        <div class="contact-form-panel">
+          <form id="contactForm">
+
+            <div class="form-group">
+              <label for="contact-name">* Name</label>
+              <input type="text" id="contact-name" name="name" required placeholder="Your full name">
+            </div>
+
+            <div class="form-group">
+              <label for="contact-phone">* Phone</label>
+              <input type="tel" id="contact-phone" name="phone" required placeholder="+91 XXXXX XXXXX">
+            </div>
+
+            <div class="form-group">
+              <label for="contact-product">Product <span class="form-hint">— List our products by drop</span></label>
+              <div class="select-wrapper">
+                <select id="contact-product" name="product">
+                  <option value="" disabled selected>Select a product…</option>
+                  <option value="chromabanner">ChromaBanner Jet (Solvent Ink)</option>
+                  <option value="chromapipe">ChromaPipe Crimson (PVC Coding Ink)</option>
+                  <option value="flexiprint">FlexiPrint Emerald (Sublimation Ink)</option>
+                  <option value="obsidian">Obsidian Mark-10 (Industrial Black)</option>
+                  <option value="custom">Custom Blend Inquiry</option>
+                </select>
+                <i data-lucide="chevron-down" class="select-icon"></i>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" name="email" placeholder="your@email.com">
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" rows="4" placeholder="Tell us about your requirement…"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full contact-submit-btn">
+              <span>Submit Enquiry</span>
+              <i data-lucide="send"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="section-container">
+      <div class="footer-grid">
+
+        <!-- Left: Logo + Address -->
+        <div class="footer-brand">
+          <a href="#home" class="logo footer-logo">
+            <span class="logo-text">CHROMA</span><span class="logo-accent">INK</span>
+          </a>
+          <p class="footer-tagline">Pioneers of high-grade industrial printing inks for banner printing, PVC pipes, and flexible substrates.</p>
+          <div class="footer-address">
+            <div class="footer-addr-item">
+              <i data-lucide="map-pin"></i>
+              <span>ChromaInk Pvt. Ltd, Industrial Area,<br>Tamil Nadu – 600001, India</span>
+            </div>
+            <div class="footer-addr-item">
+              <i data-lucide="phone"></i>
+              <span>+91 XXXXX XXXXX</span>
+            </div>
+            <div class="footer-addr-item">
+              <i data-lucide="mail"></i>
+              <span>info@chromaink.in</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center: Quick Links -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Right: Social Platforms -->
+        <div class="footer-social-col">
+          <h4 class="footer-col-title">Social Platforms</h4>
+          <div class="footer-social-links">
+            <a href="#" class="footer-social-item" aria-label="WhatsApp">
+              <div class="footer-social-icon footer-social-wa">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <span>WhatsApp</span>
+            </a>
+            <a href="#" class="footer-social-item" aria-label="Instagram">
+              <div class="footer-social-icon footer-social-ig">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <span>Instagram</span>
+            </a>
+            <a href="#" class="footer-social-item" aria-label="Facebook">
+              <div class="footer-social-icon footer-social-fb">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <span>Facebook</span>
+            </a>
+            <a href="#" class="footer-social-item" aria-label="YouTube">
+              <div class="footer-social-icon footer-social-yt">
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+              <span>YouTube</span>
+            </a>
+            <a href="#" class="footer-social-item" aria-label="LinkedIn">
+              <div class="footer-social-icon footer-social-li">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 ChromaInk Pvt. Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
+
