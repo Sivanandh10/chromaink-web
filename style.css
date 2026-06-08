@@ -173,7 +173,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-accent);
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--accent-color);
+  color: #c084fc;
   letter-spacing: 2px;
   margin-bottom: 12px;
   text-transform: uppercase;
@@ -1345,7 +1345,7 @@ h1, h2, h3, h4, h5, h6 {
     rgba(9, 9, 11, 0) 60%);
   border-bottom: 1px solid var(--border-color);
   text-align: center;
-  padding: 60px 20px 50px;
+  padding: 140px 20px 50px;
 }
 
 .contact-header-sub {
@@ -1569,7 +1569,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .contact-header-banner {
-    padding: 44px 20px 36px;
+    padding: 110px 20px 36px;
   }
 }
 
