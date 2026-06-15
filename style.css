@@ -1,5 +1,5 @@
 /* ==========================================================================
-   CHROMAINK PREMIUM STYLE SHEET
+   STANDARD ENTERPRISES PREMIUM STYLE SHEET
    ========================================================================== */
 
 /* --- Design Tokens / Theme Variables --- */
@@ -2425,4 +2425,25 @@ h1, h2, h3, h4, h5, h6 {
     width: 18px;
     height: 18px;
   }
+}
+
+.header-logo-img {
+  height: 48px;
+  width: auto;
+  max-height: 100%;
+  transition: transform var(--transition-fast);
+}
+
+.header-logo-img:hover {
+  transform: scale(1.05);
+}
+
+.footer-logo-img {
+  height: 48px;
+  width: auto;
+  transition: transform var(--transition-fast);
+}
+
+.footer-logo-img:hover {
+  transform: scale(1.05);
 }

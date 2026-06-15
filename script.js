@@ -1,5 +1,5 @@
 /* ==========================================================================
-   CHROMAINK INTERACTIVE SCRIPT
+   STANDARD ENTERPRISES INTERACTIVE SCRIPT
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -227,24 +227,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const productData = {
       "1": {
         tag: "★ BEST SELLER - SOLVENT BASED",
-        name: "ChromaBanner Jet",
+        name: "StandardBanner Jet",
         desc: "Premium blue solvent ink for large-format flex banner printers. Vivid density and high weather stability. Our advanced solvent formula penetrates deep into vinyl and flex substrates, ensuring the print remains waterproof, UV-resistant, and vibrant under direct sunlight for up to 5 years.",
         img: "assets/product-sapphire.png",
-        waLink: "https://wa.me/1234567890?text=Hi!%20I'd%20like%20to%20order%20ChromaBanner%20Jet"
+        waLink: "https://wa.me/1234567890?text=Hi!%20I'd%20like%20to%20order%20StandardBanner%20Jet"
       },
       "2": {
         tag: "★ HIGH DEMAND - PVC CODING",
-        name: "ChromaPipe Crimson",
+        name: "StandardPipe Crimson",
         desc: "Bright crimson coding ink. Fast adhesion on plastics, PVC pipes, conduits, and cables. Specifically blended for continuous inkjet (CIJ) systems. It cures instantly upon printing to prevent smudging or fading on high-speed industrial extrusion lines.",
         img: "assets/product-crimson.png",
-        waLink: "https://wa.me/1234567890?text=Hi!%20I'd%20like%20to%20order%20ChromaPipe%20Crimson"
+        waLink: "https://wa.me/1234567890?text=Hi!%20I'd%20like%20to%20order%20StandardPipe%20Crimson"
       },
       "3": {
         tag: "★ PREMIUM QUALITY - SUBLIMATION",
-        name: "FlexiPrint Emerald",
+        name: "StandardPrint Emerald",
         desc: "High-speed green printing ink. Specialized formulation for flexible vinyl banners and canvas. Offers superior color gamut and printhead lubrication to prevent clogging. Ideal for automated large-scale outdoor advertising production.",
         img: "assets/product-emerald.png",
-        waLink: "https://wa.me/1234567890?text=Hi!%20I'd%20like%20to%20order%20FlexiPrint%20Emerald"
+        waLink: "https://wa.me/1234567890?text=Hi!%20I'd%20like%20to%20order%20StandardPrint%20Emerald"
       },
       "4": {
         tag: "★ INDUSTRIAL STANDARD - INDUSTRIAL BLACK",
@@ -427,7 +427,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const message = document.getElementById('contact-message').value.trim() || 'Not provided';
       
       // Construct WhatsApp message
-      const text = `*New Enquiry from ChromaInk Web* ✒️\n\n` +
+      const text = `*New Enquiry from Standard Enterprises Web* ✒️\n\n` +
                    `*Name:* ${name}\n` +
                    `*Phone:* ${phoneVal}\n` +
                    `*Product:* ${product}\n` +
