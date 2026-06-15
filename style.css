@@ -2432,6 +2432,7 @@ h1, h2, h3, h4, h5, h6 {
   width: auto;
   max-height: 100%;
   transition: transform var(--transition-fast);
+  filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.45));
 }
 
 .header-logo-img:hover {
@@ -2442,6 +2443,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 48px;
   width: auto;
   transition: transform var(--transition-fast);
+  filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.45));
 }
 
 .footer-logo-img:hover {

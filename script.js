@@ -226,27 +226,34 @@ document.addEventListener('DOMContentLoaded', () => {
     // Product data lookup
     const productData = {
       "1": {
+        tag: "★ COMPLETE BUNDLE - ALL PRODUCTS",
+        name: "Standard All-in-One Combo",
+        desc: "Complete industrial ink and cleaning solution package featuring all primary colors and printhead flush. Get standard banner jet, pipe crimson, sublimation yellow, industrial black, and standard cleaning solution in a single value bundle. Perfect for scaling print shops and industrial extrusion plants.",
+        img: "assets/all in 1.JPG",
+        waLink: "https://wa.me/1234567890?text=Hi!%20I'd%20like%20to%20order%20the%20Standard%20All-in-One%20Combo%20Pack"
+      },
+      "2": {
         tag: "★ BEST SELLER - SOLVENT BASED",
         name: "StandardBanner Jet",
         desc: "Premium blue solvent ink for large-format flex banner printers. Vivid density and high weather stability. Our advanced solvent formula penetrates deep into vinyl and flex substrates, ensuring the print remains waterproof, UV-resistant, and vibrant under direct sunlight for up to 5 years.",
-        img: "assets/product-sapphire.png",
+        img: "assets/2.PNG",
         waLink: "https://wa.me/1234567890?text=Hi!%20I'd%20like%20to%20order%20StandardBanner%20Jet"
       },
-      "2": {
+      "3": {
         tag: "★ HIGH DEMAND - PVC CODING",
         name: "StandardPipe Crimson",
         desc: "Bright crimson coding ink. Fast adhesion on plastics, PVC pipes, conduits, and cables. Specifically blended for continuous inkjet (CIJ) systems. It cures instantly upon printing to prevent smudging or fading on high-speed industrial extrusion lines.",
-        img: "assets/product-crimson.png",
+        img: "assets/3.jpg",
         waLink: "https://wa.me/1234567890?text=Hi!%20I'd%20like%20to%20order%20StandardPipe%20Crimson"
       },
-      "3": {
+      "4": {
         tag: "★ PREMIUM QUALITY - SUBLIMATION",
         name: "StandardPrint Emerald",
-        desc: "High-speed green printing ink. Specialized formulation for flexible vinyl banners and canvas. Offers superior color gamut and printhead lubrication to prevent clogging. Ideal for automated large-scale outdoor advertising production.",
-        img: "assets/product-emerald.png",
+        desc: "High-speed yellow printing ink. Specialized formulation for flexible vinyl banners and canvas. Offers superior color gamut and printhead lubrication to prevent clogging. Ideal for automated large-scale outdoor advertising production.",
+        img: "assets/1.jpg",
         waLink: "https://wa.me/1234567890?text=Hi!%20I'd%20like%20to%20order%20StandardPrint%20Emerald"
       },
-      "4": {
+      "5": {
         tag: "★ INDUSTRIAL STANDARD - INDUSTRIAL BLACK",
         name: "Obsidian Mark-10",
         desc: "Jet black coding and batch ink. Instant dry time on plastics, PVC, glass, and steel. An industrial standard black coding fluid engineered with solvents that cross-link with substrates for chemical and abrasion resistance.",
